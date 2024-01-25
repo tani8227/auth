@@ -1,0 +1,179 @@
+
+body
+{
+    width: 100vw;
+    height: 100vh;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* gap: 1%; */
+   box-sizing: border-box;
+
+}
+
+.heading
+{
+    width: 65%;
+    height: 15%;
+   
+   
+    
+}
+
+
+
+.outercontainer
+{
+
+    width: 65%;
+    height: 70%;
+    background-color:#6549bf;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+ 
+}
+
+.container
+{
+    
+    width: 95%;
+    height: 85%;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 1%;
+    gap: .5%;
+}
+
+.inner-left-container
+{
+    width: 50%;
+    height: 90%;
+    background-color: aqua;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    gap: 50px;
+
+}
+
+.inner-right-container
+{
+    width: 50%;
+    height: 90%;
+    /* background-color: chartreuse; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    gap: 10px;
+    box-sizing: border-box;
+    border: 2px solid black;
+  
+}
+
+
+
+
+.inside-inner-right-container-form
+{
+    width: 80%;
+    height: 60%;
+    /* background-color: #ea4335; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+
+
+.inside-inner-right-container
+{
+  
+   width: 80%;
+   height: 20%;
+ 
+
+}
+
+form
+{ 
+    width: 100%;
+    height: 100%;
+ 
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+    justify-content:flex-start;
+    align-items: center;
+
+
+   
+} 
+
+form input
+{
+    width: 95%;
+    height: 40px;
+    /* background-color: aqua; */
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid grey;
+}
+
+form button
+{
+    width: 50%;
+    height: 30px;
+    box-sizing: border-box;
+
+}
+
+
+.btn
+{
+    width: 50%;
+    height: 40px;
+   
+}
+
+.btn button
+{
+    width: 100%;
+    height: 100%;
+    color: #ffffff;
+
+}
+
+#btn1
+{
+    background-color:#ea4335;
+}
+
+#btn1 a 
+{
+    text-decoration: none;
+    color: white;
+}
+
+#btn2
+{
+    background-color: #007fff;
+} 
+
+
+#btn2 a 
+{
+    text-decoration: none;
+    color: white;
+}

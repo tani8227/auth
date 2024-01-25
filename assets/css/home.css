@@ -1,0 +1,151 @@
+
+.container
+{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    background-color: rgb(180, 180, 231);
+    gap:1%;
+}
+
+.header
+{
+    width: 50%;
+    height: 15%;
+}
+.header h1
+{
+    text-align: center;
+}
+
+
+
+.signup
+{
+    width: 50%;
+    height: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+}
+
+
+.signup a 
+{
+     width: 20%;
+     height: 100%;
+     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration:none
+}
+
+.signup a button
+{
+    width: 100%;
+    height: 50%;
+    align-items: center;
+    background-color:#4285f4; 
+    font-weight: 600;
+    color: white;
+}
+
+
+.Reset
+{
+    width: 50%;
+    height: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.Reset a 
+{
+     width: 20%;
+     height: 100%;
+     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration:none
+}
+
+
+.Reset a button
+{
+    width: 100%;
+    height: 50%;
+    align-items: center; 
+    background-color: rgb(249, 253, 27);
+    font-weight: 600;
+    color: white;
+}
+
+.signin
+{
+    width: 50%;
+    height: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+}
+.signin a 
+{
+     width: 20%;
+     height: 100%;
+     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration:none
+}
+
+.signin a button
+{
+    width: 100%;
+    height: 50%;
+    align-items: center;
+    background-color:#303f9f;
+    font-weight: 600;
+    color: white;
+}
+.signout
+{
+    width: 50%;
+    height: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.signout a 
+{
+     width: 20%;
+     height: 100%;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     text-decoration:none
+}
+.signout a button
+{
+    width: 100%;
+    height: 50%;
+    align-items: center;
+    background-color: rgb(253, 35, 27);
+    font-weight: 600;
+    color: white;
+}

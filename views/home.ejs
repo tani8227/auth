@@ -1,0 +1,39 @@
+<link rel="stylesheet" href="/css/home.css">
+<div  class="container"> 
+<div class="header"> 
+
+     <h1>
+          Welcome to Homepage
+     </h1>
+     
+</div>
+
+  <%if(locals.user){%>
+     
+     <div class="signout">
+         <a href="/users/sign-out"><button>Sign out</button> </a>
+          
+     </div>
+       
+     <div class="Reset">
+          <a href="/users/reset-password-page"><button>Reset Password</button> </a>
+            
+       </div>
+
+  <%}else{%>
+
+     <div class="signup">
+        <a href="/users/signup"><button>Sign up</button></a>
+            
+       </div>
+
+       <div class="signin">
+          <a href="/users/signin"><button>Sign in</button> </a>
+           
+      </div>
+
+       <%}%>
+</div>
+        
+        
+
