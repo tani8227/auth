@@ -9,10 +9,9 @@ require('dotenv').config();
 // tell passport to use new google strategy 
 passport.use(new GoogleStrategy(
     {
-      // clientID:'525926559270-u9kjqrs5l4tkfcanknu0pqnbidkc1ahd.apps.googleusercontent.com',
-      // clientSecret:'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',
-      // callbackURL:'http://localhost:8000/users/auth/google/callback',
-
+     
+    
+    
       clientID:process.env.CLIENT_ID_GOOGEL,
         clientSecret:process.env.CLIENT_SECRET_GOOGLE,
         callbackURL:process.env.CALLBACK_URL_GOOGLE,
@@ -36,7 +35,7 @@ passport.use(new GoogleStrategy(
                     name:profile.displayName,
                     email: profile.emails[0].value,
                     password:crypto.randomBytes(20).toString('hex'),
-                    scope: ['https://www.googleapis.com/auth/userinfo.profile', 'https://www.googleapis.com/auth/userinfo.email'],
+                    scope: ['profile', 'email'],
                 })
                 if(newuser)
                 {
