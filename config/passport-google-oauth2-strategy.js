@@ -1,18 +1,17 @@
 const passport = require('passport');
 
-const GoogleStrategy= require('passport-google-oauth').OAuth2Strategy;
+const googleStrategy= require('passport-google-oauth').OAuth2Strategy;
 const crypto =require('crypto');
 const User = require('../models/user');
 require('dotenv').config();
 
 
 // tell passport to use new google strategy 
-passport.use(new GoogleStrategy(
+passport.use(new googleStrategy(
     {
-     
+
     
-    
-      clientID:process.env.CLIENT_ID_GOOGEL,
+        clientID:process.env.CLIENT_ID_GOOGLE,
         clientSecret:process.env.CLIENT_SECRET_GOOGLE,
         callbackURL:process.env.CALLBACK_URL_GOOGLE,
 

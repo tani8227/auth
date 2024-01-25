@@ -34,14 +34,14 @@ router.get('/auth/google/callback', passport.authenticate(
 
 
 
-// router.get('/auth/facebook', passport.authenticate('facebook', {scope:['profile', 'email']}));
-// router.get('/auth/facebook/callback', passport.authenticate(
+router.get('/auth/facebook', passport.authenticate('facebook', {scope:['profile', 'email']}));
+router.get('/auth/facebook/callback', passport.authenticate(
     
-//         'facebook',
-//        {
-//         failureRedirect:'/users/signin',
-//        }
-//     ), userController.createsession);
+        'facebook',
+       {
+        failureRedirect:'/users/signin',
+       }
+    ), userController.createsession);
 
 
 

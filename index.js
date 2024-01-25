@@ -41,6 +41,12 @@ app.use(session(
           }),
     }));
 
+    app.use((req, res, next) => {
+        res.setHeader('Permissions-Policy', 'geolocation=(); microphone=()');
+        next();
+      });
+      
+
 app.use(passport.initialize());
 app.use(passport.session());
 app.use(passport.setAuthenticatedUser)
@@ -50,7 +56,7 @@ app.use(customMware.setflash);
 
 
 
-
+  
  
 app.use('/', require('./routes'))
 
