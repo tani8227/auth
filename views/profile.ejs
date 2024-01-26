@@ -1,12 +1,27 @@
+<link rel="stylesheet" href="/css/profile.css">
 
-<h1>
-    
-    profile
-    
-</h1>
+         <%if(locals.user){%>   
+        <div class="container">
+
+            <div class="inner-container">
+
+               <h2>Name : <%= locals.user.name%></h2> 
+            
+            </div>
 
 
-<%if(locals.user){%>
-    <%= locals.user.name%>
+            <div class="inner-container">
 
-<%}%>
+              <h2>Email : <%= locals.user.email%></h2>
+            
+            </div>
+
+
+            <div class="inner-container">
+
+               <a href="/users/sign-out"><button>Log out</button></a>
+            
+            </div>
+
+        </div>
+    <%}%>

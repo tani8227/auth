@@ -29,13 +29,13 @@ module.exports.profile= async function(req, res)
     // }
     // }
 
-   if(req.isAuthenticated())
-   { 
+//    if(req.isAuthenticated())
+//    { 
     return res.render('profile');
-   }else
-   {
-    return res.redirect('/users/siginin');
-   }
+//    }else
+//    {
+    // return res.redirect('/users/siginin');
+//    }
 }
 
 
