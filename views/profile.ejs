@@ -1,8 +1,12 @@
-<%- include('_header');%>
+
 <h1>
     
     profile
     
 </h1>
 
-<%= locals.user.email%>
+
+<%if(locals.user){%>
+    <%= locals.user.name%>
+
+<%}%>
