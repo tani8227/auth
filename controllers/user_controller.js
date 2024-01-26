@@ -29,8 +29,13 @@ module.exports.profile= async function(req, res)
     // }
     // }
 
-
+   if(req.isAuthenticated())
+   { 
     return res.render('profile');
+   }else
+   {
+    return res.redirect('/users/siginin');
+   }
 }
 
 
@@ -144,7 +149,7 @@ module.exports.createsession= async function(req, res)
 
     req.flash('success', "sign in successfully");
     // console.log(req.flash('success'));
-    return res.redirect('/');
+    return res.redirect('/users/profile');
 
 }
 
