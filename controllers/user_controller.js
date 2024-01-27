@@ -89,14 +89,15 @@ module.exports.create=  async function(req, res)
       else
       {
 
-        // const hashpassword= await bcrypt.hash(req.body.password, 10);
+        const hashpassword= await bcrypt.hash(req.body.password, 10);
 
         if(hashpassword){ 
          const usercreated= await User.create(
             {
               name: req.body.name,
               email: req.body.email,
-              password:hashpassword,
+            //   password:hashpassword,
+            password:req.body.password,
             })
 
 
