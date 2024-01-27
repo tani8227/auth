@@ -96,8 +96,7 @@ module.exports.create=  async function(req, res)
             {
               name: req.body.name,
               email: req.body.email,
-            //   password:hashpassword,
-            password:req.body.password,
+              password:hashpassword,
             })
 
 
