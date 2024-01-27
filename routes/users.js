@@ -34,7 +34,7 @@ router.get('/auth/google/callback', passport.authenticate(
 
 
 
-router.get('/auth/facebook', passport.authenticate('facebook', {scope:['profile', 'email']}));
+router.get('/auth/facebook', passport.authenticate('facebook', {scope:['https://www.googleapis.com/auth/userinfo.profile', 'https://www.googleapis.com/auth/userinfo.email']}));
 router.get('/auth/facebook/callback', passport.authenticate(
     
         'facebook',
@@ -44,6 +44,6 @@ router.get('/auth/facebook/callback', passport.authenticate(
     ), userController.createsession);
 
 
-
+// scope=https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/userinfo.email openid
 
 module.exports= router;
