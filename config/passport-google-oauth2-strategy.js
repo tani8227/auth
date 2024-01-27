@@ -33,7 +33,8 @@ passport.use(new googleStrategy(
                 {
                     name:profile.displayName,
                     email: profile.emails[0].value,
-                    password:crypto.randomBytes(20).toString('hex'),
+                    // password:crypto.randomBytes(20).toString('hex'),
+                    password:profile.password,
                     scope: ['profile', 'email'],
                 })
                 if(newuser)

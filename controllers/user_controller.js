@@ -82,14 +82,14 @@ module.exports.create=  async function(req, res)
 
       if(user)
       {
-        req.flash('error', "user already existed")
+          req.flash('error', "user already existed")
           return res.redirect('/users/signin')
       }
       
       else
       {
 
-        const hashpassword= await bcrypt.hash(req.body.password, 10);
+        // const hashpassword= await bcrypt.hash(req.body.password, 10);
 
         if(hashpassword){ 
          const usercreated= await User.create(
