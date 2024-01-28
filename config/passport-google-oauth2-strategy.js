@@ -21,10 +21,10 @@ passport.use(new googleStrategy(
       {
         // find the user 
         const user= await User.findOne({email: profile.emails[0].value})
-          // console.log(profile);
+          console.log(profile);
         if(user)
         {
-              
+          // console.log(profile);
               return done(null, user);
         }else
         {
@@ -33,8 +33,7 @@ passport.use(new googleStrategy(
                 {
                     name:profile.displayName,
                     email: profile.emails[0].value,
-                    // password:crypto.randomBytes(20).toString('hex'),
-                    password:profile.password,
+                    password:crypto.randomBytes(20).toString('hex'),
                     scope: ['profile', 'email'],
                 })
                 if(newuser)
