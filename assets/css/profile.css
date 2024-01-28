@@ -12,7 +12,7 @@ body
 .container
 {
    
-    width:100% ;
+    width:100vw ;
     height: 40%; 
     margin-top: 20px;
     display: flex;
@@ -20,6 +20,7 @@ body
     flex-direction: column;
     align-items: center;
     /* background-color:rgb(43, 226, 202); */
+    box-sizing: border-box;
 
 
   
@@ -33,6 +34,7 @@ body
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    box-sizing: border-box;
    
 
 }
@@ -41,6 +43,7 @@ body
 {
     text-decoration: none;
     color: black;
+    max-width: 25vw;
 }
 
 button
@@ -51,6 +54,39 @@ button
     font-weight: 600;
     color: white;
 }
+
+
+@media screen and (min-width:320px){
+        .container
+        {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+         
+        .inner-container
+        {
+            width: 100%;
+            display: flex;
+            
+            justify-content: center;
+            
+        }
+
+        .inner-container h2
+        {
+         font-size: 1rem;
+        }
+      
+        .inner-container a button
+        {
+            width: 5rem;
+        }
+        
+    
+}
+
 
 
 
