@@ -31,7 +31,10 @@ module.exports.profile= async function(req, res)
 
 //    if(req.isAuthenticated())
 //    { 
-    return res.render('profile');
+    return res.render('profile',
+    {
+        title:"Profile",
+    });
 //    }else
 //    {
     // return res.redirect('/users/siginin');
