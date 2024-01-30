@@ -20,7 +20,7 @@ passport.use(new googleStrategy(
      async  function(accessToken, refreshToken,profile, done)
       {
         // find the user 
-        const user= await User.findOne({email: profile.emails[0].value})
+        const user= await User.findOne({email: profile.emails})
           console.log(profile);
         if(user)
         {
