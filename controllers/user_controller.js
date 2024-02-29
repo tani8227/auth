@@ -152,6 +152,7 @@ module.exports.createsession= async function(req, res)
 
     req.flash('success', "sign in successfully");
     // console.log(req.flash('success'));
+    console.log(req,res);
     return res.redirect('/users/profile');
 
 }

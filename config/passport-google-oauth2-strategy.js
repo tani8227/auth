@@ -25,7 +25,9 @@ passport.use(new googleStrategy(
         if(user)
         {
           // console.log(profile);
-              return done(null, user);
+
+           return done(null, user);
+
         }else
         {
             // if user not found create the user and set it req.user
